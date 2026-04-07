@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://discord.gg/MGk3t32Xrm" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you are not redirected automatically, <a href="https://discord.gg/MGk3t32Xrm">click here to join our Discord</a>.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Discord</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #36393f;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #2f3136;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 350px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .logo {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .server-name {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .members {
+      color: #b9bbbe;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .join-btn {
+      background-color: #5865f2;
+      border: none;
+      padding: 12px 20px;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .join-btn:hover {
+      background-color: #4752c4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">Discord</div>
+    <div class="server-name">Your Server Name</div>
+    <div class="members">123 Online • 1,234 Members</div>
+
+    <button class="join-btn" onclick="joinServer()">Join Server</button>
+  </div>
+
+  <script>
+    function joinServer() {
+      window.location.href = "https://discord.gg/MGk3t32Xrm";
+    }
+  </script>
+
+</body>
 </html>
